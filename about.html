@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="image/x-icon" href="d.png">
+    <title>Dila's About Page</title>
+</head>
+<a href="#top"></a>
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="intro.html">DilaArifin.</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active" style="--navAni:2">About</a></li>
+                <li><a href="music.html" style="--navAni:2">Music</a></li>
+                <li><a href="skills.html" style="--navAni:3">Skills</a></li>
+                <li><a href="portfolio.html" style="--navAni:4">Family</a></li>
+                <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkbtn">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+   <section class="container">
+    <div class="main">
+        <div class="detail">
+            <div class="header">
+                <h1><span>About Me</span></h1>
+            </div>
+            <br>
+            <h2>Hi, I am Dila!</h2>
+            <p>My full name is Nur Fadhilah Binti Arifin. I am 22 years old. I was born at Dungun, Terengganu. I am currently studying about library under library informatics course (KCDIM144), Faculty: College of Computing, Informatics and Media at University Technology MARA (UiTM) branch Kedah, Merbok.</p>
+        </div>
+
+        <div class="primaryschool">
+            <a href="https://www.facebook.com/SKB48Dungun/?locale=ms_MY" target="_blank"><img src="48.jpg" alt="School Image" class="school-image"></a>
+            <div class="description">
+                <h2>Sekolah Kebangsaan Batu 48</h2>
+                <p>This is where I studied at a normal primary school since 7 years old until 12 years old which is until UPSR. The school is near to my house. I used to ride with my bicycle every morning to attend school.</p>
+            </div>
+        </div>
+
+        <div class="secondaryschool">
+            <a href="https://m.facebook.com/profile.php?id=106379579398535" target="_blank"><img src="so.jpg" alt="Secondary School" class="secondary-image"></a>
+            <div class="description">
+                <h2>Sekolah Menengah Kebangsaan Sultan Omar</h2>
+                <p>I studied here since Form 1 until Form 5, SPM. A lots of memory were made here positive and negative. I had friends with multiculural students and I was active at sports.</p>
+            </div>
+        </div>
+        
+        <div class="uni">
+            <a href="https://kedah.uitm.edu.my/" target="_blank"><img src="uitm.jpg" alt="Uni" class="uni-image"></a>
+            <div class="description">
+                <h2>University Technology MARA, branch Kedah</h2>
+                <p>I started my diploma here at UiTM Kedah, Merbok, my life has changed since I came here from March, 2022. Currently, I am doing my best until I graduate ^0^)/!!!</p>
+            </div>
+        </div>
+        
+        <div>
+            
+        </div>
+        
+    </div>
+    <a href="#top" class="top-image"><img src="top.png" width="30" height="30"></a>
+    <audio controls autoplay hidden>
+        <source src="dream.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>   
+</section>
+
+    
+    <script>
+        const darkbtn = document.getElementById('darkbtn');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkbtn.checked = true;
+        }
+
+        darkbtn.addEventListener('change', () => {
+            if (darkbtn.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    <footer class="container">
+    <p>Copyright @2023, Designed by DilaArifin</p>
+    </footer>
+    
+</body>
+
+</html>

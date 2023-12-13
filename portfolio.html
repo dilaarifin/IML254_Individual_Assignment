@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" type="image/x-icon" href="d.png">
+    <title>Dila's About Page</title>
+</head>
+<a href="#top"></a>
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="intro.html">DilaArifin.</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" style="--navAni:2">About</a></li>
+                <li><a href="music.html" style="--navAni:2">Music</a></li>
+                <li><a href="skills.html" style="--navAni:3">Skills</a></li>
+                <li><a href="portfolio.html" class="active" style="--navAni:4">Family</a></li>
+                <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkbtn">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+           
+            <div class="social">
+                
+            </div>
+            <div class="detail">
+                <h1>My <span>Family</span></h1>
+                <br>
+
+<div class="row">
+    <div class="column">
+        <div class="content">
+            <img src="me.png" alt="Myself" class="img-w">
+            <h3>Me!</h3>
+            <p>So this is me, Dila. This picture was taken when I got a dean on Semester 1</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="parents.png" alt="My Parents" class="img-w">
+            <h3>My Parents</h3>
+            <p>My umi and aboh (Raya 2022)</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="siblings.png" alt="My Siblings" class="img-w">
+            <h3>My Siblings</h3>
+            <p>We fought a lot when we were kids but now we get older. We ain't got no time for that ;-;</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="marriage.png" alt="Brother's marriage" class="img-w">
+            <h3>Bro's marriage (2022)</h3>
+            <p>My brother's marriage with Kak Ayu (Dec 2022). Good news I'm officially auntie now...no baby picture yet hehe</p>
+        </div>
+    </div>
+<h1>My <span>Pets</span></h1>
+    <br>
+    <div class="column">
+        <div class="content">
+            <img src="aj.JPG" alt="Asam Jawa" class="img-w">
+            <h3>Asam Jawa</h3>
+            <p>✨A Grandmother to 4 kittens, A mother to 4 kids✨. </p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="oreo.JPG" alt="Oreo" class="img-w">
+            <h3>Oreo</h3>
+            <p>Oreo was a shy kitten but now he's a noti adult cat 👀</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="mochi.JPG" alt="Mochi" class="img-w">
+            <h3>Mochi</h3>
+            <p>She's the fluffiest and chonky cat ever! Her appereance makes you want to squish her ToT✨✨✨!!!</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="nescape.JPG" alt="Nescape" class="img-w">
+            <h3>Nescafe</h3>
+            <p>She was an energetic kitten, but now she became an introvert and a shy shy cat T-T💐.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="mocha.JPG" alt="Mocha" class="img-w">
+            <h3>Mocha</h3>
+            <p>She sleep a lot since she was a kitty and she loves affections from human. Now, she's a mother of 4 kittens U^U✨.</p>
+        </div>
+    </div>
+    <div class="column">
+        <div align="center" class="content">
+            <iframe width="400" height="700" src="https://youtube.com/embed/A7HZRKcv59w?si=hSFx_Hl68aimroH8" allowfullscreen></iframe>
+            <h3>My Pets Video</h3>
+            <p>We play with the cats every evening U-U✨.</p>
+        </div>
+    </div>
+</div>
+
+</div>
+            </div>
+
+    </section>
+    
+    <script>
+        const darkbtn = document.getElementById('darkbtn');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkbtn.checked = true;
+        }
+
+        darkbtn.addEventListener('change', () => {
+            if (darkbtn.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+    <footer class="container">
+    <p>Copyright @2023, Designed by DilaArifin</p>
+    </footer>
+</body>
+
+</html>

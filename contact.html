@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="d.png">
+    <title>Dila's personal website</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">DilaArifin.</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html" style="--navAni:1">Home</a></li>
+                <li><a href="about.html" style="--navAni:2">About</a></li>
+                <li><a href="music.html" style="--navAni:2">Music</a></li>
+                <li><a href="skills.html" style="--navAni:3">Skills</a></li>
+                <li><a href="portfolio.html" style="--navAni:4">Family</a></li>
+                <li><a href="contact.html" class="active" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkbtn">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+     <section class="container">
+        <div class="main">
+            <div class="detail">
+                <h1>My<span>Contact</span></h1>
+                <h3></h3>
+                <p class="disclaimer-container">No phone: +6018-91151815</p>
+                <p class="disclaimer-container">Email: nurfadhilaharifin01@gmail.com</p>
+
+                <p class="disclaimer-container">Disclaimer: It's a personal blog here. Unless otherwise indicated, all views and opinions expressed in this blog are personal, exclusive to the blog owner, and do not reflect the views of any individuals, groups, or institutions with which the owner may not be personally or professionally affiliated. The purpose of any ideas or opinions is not to disparage any religion, ethnic group, club, organization, business, or person.
+
+                This blog's material is all offered solely for informational purposes. The blog's owner offers no guarantees for the accuracy or comprehensiveness of any material on the site or that may be accessed by clicking on any of its links. The owner disclaims all liability for any mistakes or omissions in the information, as well as for its availability. The publication or use of this information may result in losses, injuries, or damages for which the owner shall not be responsible.
+                </p>
+            </div>
+        </div>
+         
+        <audio controls autoplay hidden>
+            <source src="dream.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+         
+    </section>
+        
+    <script>
+                const darkbtn = document.getElementById('darkbtn');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkbtn.checked = true;
+        }
+
+        darkbtn.addEventListener('change', () => {
+            if (darkbtn.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+    
+    <footer class="container">
+    <p2>Copyright @2023, Designed by DilaArifin</p2>
+    </footer>
+    
+    
+</body>
+
+</html>
